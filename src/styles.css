@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.table {
+    margin-top: 3%;
+}
+
+.btn {
+    margin: 1%;
+}
+
+body {
+    background-color: beige;
+    margin-top: 2%;
+}

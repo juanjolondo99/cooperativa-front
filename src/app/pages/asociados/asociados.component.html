@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Cédula</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Apellido</th>
+                      <th scope="col">Teléfono</th>
+                      <th scope="col">Opciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let asociado of asociados; let indice=index">
+                      <th scope="row">{{indice+1}}</th>
+                      <td>{{asociado.cedula}}</td>
+                      <td>{{asociado.nombre}}</td>
+                      <td>{{asociado.apellido}}</td>
+                      <td>{{asociado.telefono}}</td>
+                      <td>
+                        <a class="btn btn-secondary" [routerLink]="['/productos', asociado.id]">Ver productos</a>
+                      </td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </div>
+</div>
